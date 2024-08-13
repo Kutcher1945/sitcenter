@@ -271,11 +271,16 @@ h1, .h1 {
     border-color: var(--c-brand);
 }
 
+
+
 .marquee {
     background-color: #143b6c;
     color: #eee;
     overflow: hidden;
     position: relative;
+    background: #143b6c url('../img/bg-hero.png') no-repeat center center;
+    background-size: cover;
+
   }
   .marquee:before, .marquee:after {
     position: absolute;
@@ -298,6 +303,7 @@ h1, .h1 {
     height: 100px;
     display: flex;
     animation: scrolling var(--marquee-animation-duration) linear infinite;
+
   }
   /* .marquee-content:hover {
     animation-play-state: paused;
@@ -337,10 +343,13 @@ h1, .h1 {
 
 /*** Hero Header ***/
 .hero-header {
-    /* margin-top: -75px; */
-    background: url(../img/bg-hero.png) center center no-repeat;
+    background: #143b6c url('../img/bg-hero.png') no-repeat center center;
     background-size: cover;
-}
+    position: relative;
+    color: white;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
 
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
