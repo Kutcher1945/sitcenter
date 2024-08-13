@@ -274,14 +274,13 @@ h1, .h1 {
 
 
 .marquee {
-    background-color: #143b6c;
+    background: linear-gradient(to bottom, #0d1825, #04264e), url('../img/bg-hero.png') no-repeat center center;
+    background-size: cover;
     color: #eee;
     overflow: hidden;
     position: relative;
-    background: #143b6c url('../img/bg-hero.png') no-repeat center center;
-    background-size: cover;
-
   }
+
   .marquee:before, .marquee:after {
     position: absolute;
     top: 0;
