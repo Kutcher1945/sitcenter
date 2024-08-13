@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGE7BY3LT4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MGE7BY3LT4');
+    </script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <title>Ситуационный центр - города Алматы</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta property="og:title" content="Imagine Analytics - Analytics For The Better World">
+    <meta property="og:description" content="At ImagineAnalytics, we specialize in leveraging the full potential of data analytics to drive transformative business outcomes.">
+    <meta property="og:image" content="../img/link_whats.png">
+    <meta property="og:url" content="https://imagineanalytics.ai/">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.svg" alt="Company Logo" class="img-fluid " style="max-width: 280px;">
+                </a>          
+                <button type="button" class="navbar-toggler ms-auto me-0 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#hero" class="nav-item nav-link active text-black" data-translate="navbar.home">Главная</a>
+                        <a href="#about" class="nav-item nav-link text-black" data-translate="navbar.about">О проекте</a>
+                        <a href="#services" class="nav-item nav-link text-black" data-translate="navbar.services">Сервисы</a>
+                        <a href="#projects" class="nav-item nav-link text-black" data-translate="navbar.projects">Модули</a>
+                        <a href="#contact" class="nav-item nav-link text-black" data-translate="navbar.contact">Контакты</a>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="ru">Russian</a></li>
+                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="en">English</a></li>
+                            </ul>
+                        </li> -->
+                    </div>
+                    <!-- <button type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 hero-header mb-5" id="hero" style="background: #143b6c;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight" data-translate="hero.company">ImagineAnalytics</div> -->
+                    <h4 class="display-4 text-white mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
+                    <p class="text-white mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
+                    <!-- <a href="#about" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight" data-translate="hero.getStarted">Get started</a> -->
+                    <!-- <a href="#services" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight" data-translate="hero.ourServices">Our services</a> -->
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img id="hero-image" class="img-fluid" src="img/hero.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade bg-white" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 bg-white" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/some.svg">
+                        <!-- <div class="gradient-overlay"></div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" data-translate="about.heading">О нас</div>
+                    <h1 class="mb-4" data-translate="about.title">Создаем умный город вместе с передовыми технологиями</h1>
+                    <p class="mb-4" data-translate="about.description1">Проект Ситуационного центра города Алматы представляет собой важный шаг на пути к созданию умного города, где технологии и данные играют ключевую роль в устойчивом развитии, повышении эффективности управления и улучшении качества жизни всех его жителей. Этот проект демонстрирует приверженность города инновациям и стремление к созданию безопасного, комфортного и устойчивого городского пространства для всех его граждан.</p>
+                    <p class="mb-4" data-translate="about.description2"></p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.awardWinning">Повышение оперативности</span></h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.professionalStaff">Улучшение качества жизни</span></h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.support247">Оптимизация ресурсов</span></h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.fairPrice">Прозрачность и доверие</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <!-- <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
+                    <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
+                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-robot fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Natural Language Processing</h5>
+                                        <p>We use NLP techniques to analyze and derive insights from text data, enabling better understanding of customer sentiments and behaviors.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-power-off fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Machine learning</h5>
+                                        <p>We develop custom machine learning models tailored to your specific business needs.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-graduation-cap fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Education & Science</h5>
+                                        <p>We offer geo-analytical services to help you understand location-based trends and patterns in your data.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-brain fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Predictive Analysis</h5>
+                                        <p>Our predictive analytics models help you forecast future trends and make informed decisions.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Service End -->
+
+    <!-- Services Start -->
+    <section id="services" class="section-padding border-top bg-light mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" data-translate="services.heading">Сервисы</div>
+                        <h1 class="display-4 fw-semibold" data-translate="services.title">Наши Решения для Умного Города Алматы</h1>
+                        <div class="line"></div>
+                        <p data-translate="services.description">Ситуационный центр города Алматы предлагает комплексную платформу для мониторинга и управления городской инфраструктурой. Наша цель - повысить эффективность управления городскими ресурсами, улучшить качество жизни горожан и обеспечить устойчивое развитие города. Изучите наши сервисы ниже:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.cityMap.title">Карта города</h5>
+                        <p data-translate="services.cityMap.description">Подробная цифровая карта города с актуальной информацией о состоянии инфраструктуры и услуг.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-community-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.cityServices.title">Городские сервисы</h5>
+                        <p data-translate="services.cityServices.description">Централизованный доступ к основным городским сервисам для удобства граждан и гостей города.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-bar-chart-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.indicators.title">Индикаторы</h5>
+                        <p data-translate="services.indicators.description">Мониторинг ключевых индикаторов для оперативного управления и принятия решений.</p>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-heart-pulse-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.socialSphere.title">Социальная сфера</h5>
+                        <p data-translate="services.socialSphere.description">Поддержка и развитие социальных услуг для улучшения качества жизни граждан.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-global-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.economics.title">Экономика</h5>
+                        <p data-translate="services.economics.description">Анализ экономических показателей и управление финансами города.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-shield-keyhole-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.security.title">Безопасность</h5>
+                        <p data-translate="services.security.description">Обеспечение безопасности граждан и мониторинг критических ситуаций.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-bus-2-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.transport.title">Транспорт</h5>
+                        <p data-translate="services.transport.description">Управление и оптимизация транспортной системы города.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-file-list-3-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.documentArchive.title">Архив документов</h5>
+                        <p data-translate="services.documentArchive.description">Цифровой архив важных городских документов для удобного доступа и управления.</p>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-focus-3-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.developmentPrograms.title">Программы развития</h5>
+                        <p data-translate="services.developmentPrograms.description">Инициативы и проекты, направленные на устойчивое развитие города. Способствующая росту развития.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-lightbulb-flash-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.startupEcosystem.title">Стартап экосистема</h5>
+                        <p data-translate="services.startupEcosystem.description">Поддержка инновационных стартапов и развитие предпринимательства в городе.</p>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-bar-chart-box-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.analytics.title">Аналитика</h5>
+                        <p data-translate="services.analytics.description">Комплексный анализ данных для поддержки управленческих решений и планирования.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-leaf-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" data-translate="services.ecology.title">Экология</h5>
+                        <p data-translate="services.ecology.description">Мониторинг экологического состояния города и внедрение инициатив по защите окружающей среды.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services End -->
+
+    <!-- Feature Start -->
+    <!-- <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" data-translate="feature.heading">Why Choose Us</div>
+                    <h1 class="text-white mb-4" data-translate="feature.title">Our team at ImagineAnalytics is dedicated to providing personalized and innovative solutions tailored to meet the unique needs of your business.</h1>
+                    <p class="text-light mb-4" data-translate="feature.description">Looking to supercharge your business with cutting-edge technology? Let our expert team at ImagineAnalytics guide you through the world of data science, machine learning, and artificial intelligence. Transform your operations, optimize your processes, and unlock insights to drive success. Contact us today to learn more about how we can help your business thrive in the digital age.</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="">
+                            <span>1.  &nbsp;</span>
+                        </div>
+                        <span data-translate="feature.items.chatbots">Our team develops chatbot solutions to improve customer interactions.</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="">
+                            <span>2.  &nbsp;</span>
+                        </div>
+                        <span data-translate="feature.items.databases">We offer access to a wide range of databases for your research.</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="">
+                            <span>3.  &nbsp;</span>
+                        </div>
+                        <span data-translate="feature.items.services">Our services extend beyond these listed, providing comprehensive solutions.</span>
+                    </div>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">400</h2>
+                                    <p class="text-white mb-0" data-translate="feature.clients">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">370</h2>
+                                    <p class="text-white mb-0" data-translate="feature.projects">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img id="feature-image" class="img-fluid" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Feature End -->
+    
+    <!-- Projects Start -->
+    
+    
+    <!-- Projects End -->
+
+
+    <!-- FAQs Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How can data analytics be used to personalize the customer experience in retail?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Our expertise, dedication to ongoing learning, and ability to tailor solutions to individual business needs make us the ideal partner for companies looking to harness the power of artificial intelligence effectively and efficiently.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can you help us develop a predictive analytics model to forecast our sales trends more accurately?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes, we can develop a predictive analytics model tailored to your sales data to help you forecast trends more accurately. Our team will work closely with you to understand your specific requirements and ensure the model meets your needs.
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How can machine learning improve our customer segmentation and targeting strategies?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Machine learning can provide real-time insights into customer behavior, allowing you to adapt your segmentation and targeting strategies quickly in response to changing market conditions or customer preferences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Do you have experience implementing natural language processing solutions for analyzing customer feedback and reviews?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Absolutely, we have extensive experience in implementing natural language processing solutions for analyzing customer feedback and reviews. Our NLP models can help you extract valuable insights from text data to improve your products or services.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How can we leverage machine learning for personalized marketing campaigns?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Anomaly detection algorithms can help improve fraud detection by identifying unusual patterns or outliers in your financial transactions. Our team can develop and implement these algorithms to enhance the security of your financial operations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Do you offer recommender system solutions to enhance our e-commerce platform's product recommendations?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, our recommender system solutions can enhance your e-commerce platform's product recommendations by analyzing user behavior and preferences. This can lead to increased sales and customer satisfaction.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What are the key considerations for deploying and monitoring machine learning models in a production environment?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We can help you automate decision-making processes in your supply chain management by developing machine learning models that analyze data and make recommendations based on predefined criteria. This can improve efficiency and reduce costs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How can machine learning improve my business operations?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Machine learning can improve your business operations by automating repetitive tasks, identifying patterns in data for better decision-making, and predicting outcomes to optimize processes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
+                    <h1 class="mb-4">Meet Our Experienced Team Members</h1>
+                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
+                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <small>Founder & CEO</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
+                                        <h5 class="mb-0">Adam Crew</h5>
+                                        <small>Executive Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
+                                        <h5 class="mb-0">Kate Winslet</h5>
+                                        <small>Co Founder</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
+                                        <h5 class="mb-0">Cody Gardner</h5>
+                                        <small>Project Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- Team End -->
+    <!-- Projects Start -->
+    <section class="container-xxl py-5" id="projects">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                <div class="section-title">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Модули</div>
+                    <h1 class="display-4 fw-semibold">Исследуйте наши последние проекты и кейсы по ИИ</h1>
+                    <div class="line"></div>
+                    <p>В Ситуационном Центре мы стремимся преобразовывать данные в ценные инсайты для наших клиентов из различных отраслей и секторов. Наше портфолио демонстрирует разнообразие проектов, где мы использовали передовые аналитические и ИИ-решения для поддержки бизнеса, муниципалитетов и государственных учреждений. От оптимизации операций до стимулирования инноваций, наша команда нацелена на предоставление практических решений, которые способствуют успеху. Ознакомьтесь с нашим портфолио, чтобы увидеть, как Ситуационный Центр может помочь вам использовать мощь данных и открыть новые возможности для вашей организации.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/proj3.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Управление и развитие городской инфраструктуры с использованием карт города и координат</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal1">Подробнее</a>
+                            <a class="show-more" target="_blank" href="">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img src="img/proj2.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Отслеживание ремонтных работ в городских районах с использованием карт и координат</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal2">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="swiper-slide">
+                    <img src="img/proj2.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Прогнозирование и исследование рынка строительных материалов</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal3">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+    
+                <!-- <div class="swiper-slide">
+                    <img src="img/proj5.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Анализ ипотечного кредитования и государственных программ поддержки жилищного строительства</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal4">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+    
+                <!-- <div class="swiper-slide">
+                    <img src="img/proj7.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Разработка облачной архитектуры для бесшовной интеграции моделей машинного обучения</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal5">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+    
+                <div class="swiper-slide">
+                    <img src="img/proj1.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Разработка модели прогнозирования траектории движения шахтера под землей</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal6">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="swiper-slide">
+                    <img src="img/proj4.webp" alt="">
+                    <div class="swiper-slide-content">
+                        <div>
+                            <h2>Полностью автоматизированная система обнаружения мошенничества с использованием ИИ</h2>
+                            <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" data-bs-toggle="modal" data-bs-target="#projectModal7">Подробнее</a>
+                            <a class="show-more" href="" target="_blank">
+                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+
+            <!-- <div class="swiper-slide">
+                    <img src="assets/images/about-1.jpg" alt="">  
+                <div class="swiper-slide-content">
+                    <div>
+                        <h2>
+                            Italy
+                        </h2>
+                        <p>
+                            Located in the middle of the Mediterranean Sea, it consists of a peninsula delimited by
+                            the Alps and surrounded by several islands. Italy shares land borders with France,
+                            Switzerland, Austria, Slovenia and the enclaved microstates of Vatican City and San
+                            Marino.
+                        </p>
+                        <a class="show-more" href="" target="_blank">
+                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/about-1.jpg" alt="">  
+            <div class="swiper-slide-content">
+                <div>
+                    <h2>
+                        Italy
+                    </h2>
+                    <p>
+                        Located in the middle of the Mediterranean Sea, it consists of a peninsula delimited by
+                        the Alps and surrounded by several islands. Italy shares land borders with France,
+                        Switzerland, Austria, Slovenia and the enclaved microstates of Vatican City and San
+                        Marino.
+                    </p>
+                    <a class="show-more" href="" target="_blank">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div> -->
+            
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Navigation -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+
+        </div>
+    </div>
+    
+    
+    <!-- Modal Structure -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Development of an economic diversification strategy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj4.webp" alt="" class="img-fluid mb-3">
+                    <p>Development of tools and strategies to improve the structure of the economy of the Central Asian country through deepening technological diversification and strengthening export potential.</p>
+                    <p>The project provided government agencies with effective analytical tools to support informed economic policy decisions that promote technological renewal and economic growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1"> Research on the impact of the global health crisis on the economy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj3.webp" alt="" class="img-fluid mb-3">
+                    <p>Analysis of the impact of the pandemic on economic processes in Central Asia, in order to develop strategic solutions to minimize economic losses.</p>
+                    <p>The project provided the customer with in-depth analytical data and forecasts that helped in formulating effective strategies to mitigate the effects of the pandemic on the economy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Forecasting and research of the construction materials market</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj2.webp" alt="" class="img-fluid mb-3">
+                    <p>Analysis and forecasting of the development of the construction materials market in Central Asia to optimize government support for the industry.</p>
+                    <p>The information provided by the project helped the customer to plan strategic measures to stimulate the growth and sustainability of the industry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Analysis of mortgage lending and state support programs for housing construction</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj1.webp" alt="" class="img-fluid mb-3">
+                    <p>Assessment of the availability and effectiveness of mortgage lending and government programs to support housing construction in Central Asia.</p>
+                    <p>The analytics developed during the project became the basis for optimizing banking products and government programs aimed at improving the living conditions of the population.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Development of Cloud Architecture for Seamless Integration of Machine Learning Models with the Cloud</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj5.webp" alt="" class="img-fluid mb-3">
+                    <p>Developed an architecture using Terraform (IaC) for 10 different machine learning models with a more reliable storage and access system, offering high computational power.</p>
+                    <p>The bank received a flexible and scalable cloud architecture, significantly improving the performance of machine learning models. The deployment time for new models was reduced by 50%, and integration with cloud services significantly reduced operational costs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Development of a Model for Predicting the Path of a Miner Underground</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj6.webp" alt="" class="img-fluid mb-3">
+                    <p>Developed an algorithm to predict miner behavior in the mine using statistical models for quick localization in case of emergencies and real-time probable localization for safety.</p>
+                    <p>The developed model significantly improved safety levels in mines, enabling quick response in emergency situations. The probability of successfully finding a miner in case of an emergency increased by 70%, reducing rescue operation times and minimizing risk to miners' lives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Fraud Detection System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj7.webp" alt="" class="img-fluid mb-3">
+                    <p>Our web service is designed for effective detection and prevention of anti-spoofing, providing reliable protection against fraudulent attempts and forgery. Used advanced algorithms and machine learning models based on comprehensive data analysis to detect and block unauthorized access attempts and forgery.</p>
+                    <p>The implementation of the system allowed banks to reduce fraud levels by 85% thanks to the high-accuracy detection and prevention system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">What Say Our Clients!</h1>
+                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">ImagineAnalytics stands out as the premier choice for businesses seeking advanced machine learning services due to the comprehensive suite of offerings we provide. From developing custom machine learning models and predictive analytics to natural language processing, computer vision, anomaly detection, recommender systems, automated decision making, model deployment and monitoring, machine learning consultation, continuous learning, and more, we offer a holistic approach to leveraging AI for driving innovation and growth.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Working with ImagineAnalytics was a game-changer for our business. Their predictive analytics model not only helped us forecast sales trends accurately but also allowed us to make data-driven decisions that positively impacted our bottom line. Their commitment to excellence and innovation is truly commendable.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">ImagineAnalytics exceeded our expectations with their natural language processing solutions. They helped us analyze customer feedback more effectively, leading to improved product development and customer satisfaction. Their team's professionalism and expertise made the entire process seamless. We look forward to collaborating with them again.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Empty Container for Increasing Height -->
+    <!-- <div class="empty-container"></div> -->
+
+    <!-- Contact Start -->
+    <!-- <div class="container-fluid bg-primary newsletter py-5" id="contact">
+        <div class="container" style="padding: 5px; padding-top: 20px;">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-center wow fadeIn robot-container" data-wow-delay="0.3s">
+                    <div class="message-box mx-auto">
+                        <span class="word"></span>
+                        <div class="author">- Tove Jansonn</div>  -->
+                        <!-- Added author reference -->
+                    <!-- </div>
+                    <img class="img-fluid robot-image" src="img/newsletter.png" alt="Robot" id="robot">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" data-translate="contact.heading">Get in touch</div>
+                    <p id="contact-title" class="text-white mb-4" data-translate="contact.title">Whether you're looking to kickstart a new project, explore partnership opportunities, or simply have a question for our team, we're here to help. Reach out to us today to start a conversation about how ImagineAnalytics can support your data analytics and AI needs. Our experts are eager to collaborate with you and drive impactful results for your organization. Let's connect and embark on a journey towards data-driven success together.</p>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5 mb-3" type="text" placeholder="Enter Your Name" style="height: 48px;" data-translate="contact.namePlaceholder">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5 mb-3" type="text" placeholder="Enter Your Email" style="height: 48px;" data-translate="contact.emailPlaceholder">
+                        <textarea class="form-control border-0 rounded w-100 ps-4 pe-5 mb-3" rows="4" placeholder="Enter Your Message" style="height: 100px;" data-translate="contact.messagePlaceholder"></textarea>
+                        <button type="button" class="btn btn-light rounded-pill px-4 py-2"><i class="fa fa-paper-plane text-primary me-2"></i><span data-translate="contact.submitButton">Submit</span></button>
+                    </div> -->
+                    <!-- <small class="text-white-50" data-translate="contact.disclaimer">Little dear, by all means do exactly as you like.</small> -->
+                <!-- </div>
+            </div>
+        </div>
+    </div> -->
+<!-- Contact End -->
+    <!-- CONTACT -->
+    <section class="section-padding bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Свяжитесь с нами</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white" style="padding-bottom: 40px;">
+                            Если у вас есть вопросы, предложения по сотрудничеству или вы хотите обсудить новый проект, наша команда всегда готова помочь. Свяжитесь с нами сегодня, чтобы узнать, как Ситуационный Центр может поддержать ваши инициативы в области управления городом, аналитики данных и цифровых технологий. Наши специалисты с радостью помогут вам достичь значимых результатов и улучшить качество городской среды. Давайте начнем сотрудничество для достижения общих целей и развития нашего города.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow" style="border-radius: 50px;">
+                        <h1 style="position: relative; justify-content: center; align-items: center; display: flex;">Форма обращения</h1>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Введите адрес электронной почты" style="border-radius: 20px;">
+                        </div>
+                        <!-- <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Введите тему" style="border-radius: 20px;">
+                        </div> -->
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control" placeholder="Введите сообщение" style="border-radius: 20px;"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-brand text-white" style="background-color: #143b6c;">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Counter Start -->
+    <div class="marquee">
+        <ul class="marquee-content">
+            <li><img src="img/uc-logo.svg"></li>
+            <li><img src="img/akimat-logo.svg"></li>
+            <li><img src="img/open-almaty-logo.svg"></li>
+            <li><img src="img/dchs-logo.svg"></li>
+        </ul>
+    </div>
+    
+    <!-- Counter End -->
+
+    <!-- Counter Start -->
+    <!-- <section id="counter" class="section-padding background-image-foot">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <h1 class="text-black display-4" id="page-views">0</h1>
+                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.pageViews">Page Views</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <h1 class="text-black display-4" id="unique-users">0</h1>
+                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.uniqueUsers">Unique Users</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <h1 class="text-black display-4" id="active-sessions">0</h1>
+                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.activeSessions">Active Sessions</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <h1 class="text-black display-4" id="bounce-rate">0%</h1>
+                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.bounceRate">Bounce Rate</h6>
+                </div>
+            </div> -->
+            <!-- <div class="row g-4">
+                <div class="col-12" data-aos="fade-down" data-aos-delay="550">
+                    <h2 class="text-black display-4" id="most-popular-section">N/A</h2>
+                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.mostPopularSection">Most Popular Section</h6>
+                </div>
+            </div> -->
+        <!-- </div>
+      </section> -->
+    <!-- Counter End -->
+
+
+     <!-- Footer Start -->
+     <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="ri-map-pin-fill"></i>
+                            <div class="cta-text">
+                                <h4 data-translate="footer.findUs">Адрес</h4>
+                                <span>Проспект Абая, 90</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="ri-phone-fill"></i>
+                            <div class="cta-text">
+                                <h4 data-translate="footer.callUs">Телефон</h4>
+                                <span>+7 775 824 9686</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="ri-mail-send-fill"></i>
+                            <div class="cta-text">
+                                <h4 data-translate="footer.mailUs">Почта</h4>
+                                <span>sitcenter@almatydc.kz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo-footer.svg" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p data-translate="footer.subscribeDefinition">Проект Ситуационного центра города Алматы направлен на создание умного города, где технологии и данные используются для устойчивого развития и улучшения качества жизни всех его жителей.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3 data-translate="footer.usefulLinks">Полезные ссылки</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#" data-translate="navbar.home">Главная</a></li>
+                                <li><a href="#" data-translate="navbar.about">О нас</a></li>
+                                <li><a href="#" data-translate="navbar.services">Услуги</a></li>
+                                <!-- <li><a href="#">Портфолио</a></li> -->
+                                <li><a href="#" data-translate="navbar.contact">Контакты</a></li>
+                                <!-- <li><a href="#">О компании</a></li> -->
+                                <!-- <li><a href="#">Наши услуги</a></li> -->
+                                <!-- <li><a href="#">Свяжитесь с нами</a></li> -->
+                            </ul>
+                        </div>
+                    </div>                    
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3 data-translate="footer.subscribe">Узнайте больше</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <!-- <p data-translate="footer.subscribeText">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p> -->
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Укажите вашу почту">
+                                    <button><i class="ri-send-plane-line"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p class="mb-0">© Copyright 2024 <span style="color: rgb(255, 255, 255);">Ситуационный Центр</span>. Все права защищены.<a href="https://imaginecommons.com/" style="color: rgb(255, 255, 255);"></a></p>
+                        </div>                        
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#" data-translate="navbar.home">Главная</a></li>
+                                <li><a href="#">Условия</a></li>
+                                <li><a href="#">Конфиденциальность</a></li>
+                                <li><a href="#">Политика</a></li>
+                                <li><a href="#" data-translate="navbar.contact">Контакты</a></li>
+                                <!-- <li><p class="mb-0" data-translate="footer.designedBy">Designed with 🧡 By <a href="https://brainwave-umber-two.vercel.app">iTry</a></p></li> -->
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+   <!-- JavaScript Libraries -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/counterup/counterup.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+   <!-- Template Javascript -->
+   <script src="js/main.js"></script>
+   <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+   <script>
+    var words = [
+            { text: 'Hi, nice to meet you!', author: 'Tove Jansonn' },
+            { text: 'Little dear, by all means do exactly as you like.', author: 'Tove Jansonn' }
+        ],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        skip_count = 0,
+        skip_delay = 15,
+        speed = 70,
+        interval;
+
+    var wordflick = function () {
+        interval = setInterval(function () {
+            if (offset >= words[i].text.length) {
+                ++skip_count;
+                if (skip_count == skip_delay) {
+                    skip_count = 0;
+                    i++;
+                    offset = 0;
+                    if (i >= len) {
+                        clearInterval(interval);
+                        return;
+                    }
+                }
+            } else {
+                part = words[i].text.substr(0, offset);
+                offset++;
+                $('.word').text(part);
+                $('.author').text('- ' + words[i].author);
+            }
+        }, speed);
+    };
+
+    $(document).ready(function () {
+        wordflick();
+    });
+</script>
+   <script>
+    function showProjectInfo(title, description) {
+        document.getElementById('projectModalLabel').textContent = title;
+        document.querySelector('.modal-body').textContent = description;
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+    });
+</script>
+   <script>
+       document.addEventListener("DOMContentLoaded", function() {
+           const languageDropdown = document.getElementById("languageDropdown");
+           const langOptions = document.querySelectorAll(".dropdown-item.lang-option");
+
+           langOptions.forEach(option => {
+               option.addEventListener("click", function() {
+                   const selectedLang = this.getAttribute("data-lang").toUpperCase();
+                   languageDropdown.textContent = selectedLang;
+               });
+           });
+       });
+document.addEventListener("DOMContentLoaded", function() {
+            async function fetchAnalyticsData() {
+                try {
+                    const response = await fetch('https://imaginebackend.onrender.com/analytics/analytics-data/');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+
+                    document.getElementById("page-views").innerText = data.pageViews;
+                    document.getElementById("unique-users").innerText = data.uniqueUsers;
+                    document.getElementById("active-sessions").innerText = data.activeSessions;
+                    document.getElementById("bounce-rate").innerText = `${data.bounceRate}%`;
+                    document.getElementById("most-popular-section").innerText = data.mostPopularSection;
+                } catch (error) {
+                    console.error('Error fetching analytics data:', error);
+                }
+            }
+
+            fetchAnalyticsData();
+
+            // Optionally, update data periodically
+            setInterval(fetchAnalyticsData, 60000); // Update every 60 seconds
+        });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
+var swiper = new Swiper('.swiper', {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5
+    },
+    keyboard: {
+        enabled: true
+    },
+    // mousewheel: {
+    //     thresholdDelta: 70
+    // },
+    autoplay: {
+        delay: 2500, // 3 seconds delay
+        disableOnInteraction: false,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+    
+});
+$('.swiper-slide').on('mouseover', function() {
+  swiper.autoplay.stop();
+});
+
+$('.swiper-slide').on('mouseout', function() {
+  swiper.autoplay.start();
+});
+swiper.slideTo(2, false, false);
+</script>
+<script src="js/lang.js"></script>
+</body>
+
+</html>
