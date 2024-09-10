@@ -4,6 +4,7 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGE7BY3LT4"></script>
+    <script title="OnlineWebFonts" src="https://db.onlinewebfonts.com/animations/icons/627151.js" type="text/javascript"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -81,15 +82,15 @@
                         <a href="#services" class="nav-item nav-link text-black" data-translate="navbar.services">Сервисы</a>
                         <a href="#projects" class="nav-item nav-link text-black" data-translate="navbar.projects">Модули</a>
                         <a href="#contact" class="nav-item nav-link text-black" data-translate="navbar.contact">Контакты</a>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                EN
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                                РУС
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="ru">Russian</a></li>
-                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="en">English</a></li>
+                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="ru">Русский</a></li>
+                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="kz">Қазақша</a></li>
                             </ul>
-                        </li> -->
+                        </li>
                     </div>
                     <!-- <button type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
@@ -101,23 +102,26 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 hero-header mb-5" id="hero">
-        <div class="container pt-5">
+    <div class="container-fluid pt-5 hero-header mb-5 position-relative" id="hero">
+        <video id="hero-video" class="position-absolute w-100 h-100 top-0 start-0" autoplay muted loop playsinline>
+            <source src="img/hero-video.mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container pt-5 position-relative" style="z-index: 2;">
             <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight" data-translate="hero.company">ImagineAnalytics</div> -->
-                    <h4 class="display-4 text-white mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
-                    <p class="text-white mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
-                    <!-- <a href="#about" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight" data-translate="hero.getStarted">Get started</a> -->
-                    <!-- <a href="#services" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight" data-translate="hero.ourServices">Our services</a> -->
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img id="hero-image" class="img-fluid" src="img/hero.png" alt="">
-                </div>
+                    <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                        <h4 class="display-4 text-white mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
+                        <p class="text-white mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
+                        <a href="#about" class="btn btn-light py-sm-3 px-sm-5 me-3 animated slideInRight" data-translate="hero.getStarted">О нас</a>
+                        <a href="#services" class="btn btn-outline-light py-sm-3 px-sm-5 animated slideInRight" data-translate="hero.ourServices">Наши сервисы</a>
+                    </div>
             </div>
         </div>
     </div>
     <!-- Hero End -->
+
+
+    
 
 
     <!-- Full Screen Search Start -->
@@ -146,7 +150,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/some.svg">
+                        <img class="img-fluid" src="img/city.gif" style="width: 3500px; height: auto;">
                         <!-- <div class="gradient-overlay"></div> -->
                     </div>
                 </div>
@@ -977,11 +981,11 @@
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 text-white fw-semibold">Свяжитесь с нами</h1>
+                        <h1 class="display-4 text-white fw-semibold" style="padding-bottom: 50px;">Свяжитесь с нами</h1>
                         <div class="line bg-white"></div>
-                        <p class="text-white" style="padding-bottom: 40px;">
+                        <!-- <p class="text-white" style="padding-bottom: 40px;">
                             Если у вас есть вопросы, предложения по сотрудничеству или вы хотите обсудить новый проект, наша команда всегда готова помочь. Свяжитесь с нами сегодня, чтобы узнать, как Ситуационный Центр может поддержать ваши инициативы в области управления городом, аналитики данных и цифровых технологий. Наши специалисты с радостью помогут вам достичь значимых результатов и улучшить качество городской среды. Давайте начнем сотрудничество для достижения общих целей и развития нашего города.
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -1416,6 +1420,25 @@ swiper.slideTo(2, false, false);
         })
 
     })
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("hero-video");
+    let reverse = false;
+
+    video.addEventListener('play', function() {
+        video.playbackRate = 1;
+    });
+
+    video.addEventListener('ended', function() {
+        reverse = !reverse;
+        video.playbackRate = reverse ? -1 : 1;
+        video.currentTime = reverse ? video.duration : 0;
+        video.play();
+    });
+
+    video.playbackRate = 1;
+});
 </script>
 <script src="js/lang.js"></script>
 </body>
