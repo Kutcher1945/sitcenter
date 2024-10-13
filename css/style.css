@@ -189,54 +189,124 @@ h1, .h1 {
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 0;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(0, 0, 0, .7); /* Updated text color to black */
     outline: none;
+    transition: color .3s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1); /* Black text on hover and active */
 }
 
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+/* Hamburger Icon Styling */
+.ham8 {
+    position: absolute;
+    right: 20px;
+    z-index: 1100; /* Ensure it's above the menu */
+    width: 64px; /* Adjust the width to make it smaller */
+    height: 64px; /* Adjust the height to make it smaller */
 }
 
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav {
-        padding: 0 15px;
-        background: var(--primary);
-    }
-
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
+.ham8 .line {
+    fill: none;
+    stroke: #000000; /* Black color for hamburger lines */
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms;
 }
 
+.ham8 .top {
+    stroke-dasharray: 40 160;
+    transition: transform 0.4s ease, stroke-dasharray 0.4s ease;
+    transform-origin: 50% 50%; /* center for rotation */
+}
+
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 0.4s ease;
+}
+
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transition: transform 0.4s ease, stroke-dasharray 0.4s ease;
+    transform-origin: 50% 50%; /* center for rotation */
+}
+
+.ham8.active .top {
+    transform: translateY(18px) rotate(45deg);
+    stroke-dasharray: 40 200;
+}
+
+.ham8.active .middle {
+    stroke-dasharray: 0 0;
+    opacity: 0; /* Hide the middle line */
+}
+
+.ham8.active .bottom {
+    transform: translateY(-18px) rotate(-45deg);
+    stroke-dasharray: 40 200;
+}
+
+/* Slide-in menu (mobile & tablet) */
+.navbar .navbar-nav {
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1050;
+}
+
+.navbar .navbar-nav.show {
+    transform: translateX(0);
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 15px 0;
+    font-size: 24px;
+    color: #000000; /* Black text in the sliding menu */
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* Ensure the menu is visible and styled correctly on larger screens */
 @media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
+    .ham8 {
+        display: none; /* Hide the hamburger icon on larger screens */
     }
 
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
+    .navbar .navbar-nav {
+        position: static;
+        width: auto;
+        max-width: none;
+        height: auto;
+        background: none;
+        transform: none;
+        flex-direction: row;
+        justify-content: flex-end; /* Align the menu to the right */
+        display: flex !important; /* Ensure the menu is displayed */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 0 15px;
+        color: rgba(0, 0, 0, .7); /* Black text for desktop view */
     }
 }
+
 
 
 #contact {
@@ -379,6 +449,16 @@ h1, .h1 {
 .hero-header .container {
     position: relative;
     z-index: 2; /* Ensure the text and content are above the video */
+}
+
+
+/* Custom styles for the text container */
+.text-container {
+    background-color: white; /* White background */
+    color: black;            /* Black text */
+    border-radius: 10px;      /* Rounded corners */
+    opacity: 1.9;            /* Slight transparency */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 

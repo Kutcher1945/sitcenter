@@ -70,31 +70,33 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img/logo.png" alt="Company Logo" class="img-fluid " style="max-width: 280px;">
-                </a>          
-                <button type="button" class="navbar-toggler ms-auto me-0 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#hero" class="nav-item nav-link active text-black" data-translate="navbar.home">Главная</a>
-                        <a href="#about" class="nav-item nav-link text-black" data-translate="navbar.about">О проекте</a>
-                        <a href="#services" class="nav-item nav-link text-black" data-translate="navbar.services">Сервисы</a>
-                        <a href="#projects" class="nav-item nav-link text-black" data-translate="navbar.projects">Модули</a>
-                        <a href="#contact" class="nav-item nav-link text-black" data-translate="navbar.contact">Контакты</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                                РУС
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="ru">Русский</a></li>
-                                <li><a class="dropdown-item lang-option fw-semibold" data-lang="kz">Қазақша</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                    <!-- <button type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
-                </div>
+                    <img src="img/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 280px;">
+                </a>
+
+                <!-- Hamburger Menu Icon -->
+                <svg class="ham hamRotate ham8 d-lg-none" viewBox="0 0 100 100" width="80" onclick="toggleMenu(this)">
+                    <path class="line top" d="M 30,33 H 70 C 73.722839,33 77.5,36.126468 77.5,41.578427 77.5,47.030386 74.772971,50 70,50 H 50"></path>
+                    <path class="line middle" d="M 30,50 H 70"></path>
+                    <path class="line bottom" d="M 70,67 H 30 C 30,67 22.5,66.197882 22.5,58.634253 22.5,51.070624 30,50 30,50 H 50"></path>
+                </svg>
+
+                <!-- Sliding Menu -->
+                <ul id="menu" class="navbar-nav ms-auto">
+                    <li><a href="#hero" class="nav-item nav-link active" data-translate="navbar.home">Главная</a></li>
+                    <li><a href="#about" class="nav-item nav-link" data-translate="navbar.about">О проекте</a></li>
+                    <li><a href="#services" class="nav-item nav-link" data-translate="navbar.services">Сервисы</a></li>
+                    <li><a href="#projects" class="nav-item nav-link" data-translate="navbar.projects">Модули</a></li>
+                    <li><a href="#contact" class="nav-item nav-link" data-translate="navbar.contact">Контакты</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item lang-option fw-semibold" data-lang="ru">Русский</a></li>
+                            <li><a class="dropdown-item lang-option fw-semibold" data-lang="kz">Қазақша</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
             </nav>
         </div>
     </div>
@@ -109,16 +111,20 @@
         </video>
         <div class="container pt-5 position-relative" style="z-index: 2;">
             <div class="row g-5 pt-5">
-                    <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                        <h4 class="display-4 text-white mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
-                        <p class="text-white mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
-                        <a href="#about" class="btn btn-light py-sm-3 px-sm-5 me-3 animated slideInRight" data-translate="hero.getStarted">О нас</a>
-                        <a href="#services" class="btn btn-outline-light py-sm-3 px-sm-5 animated slideInRight" data-translate="hero.ourServices">Наши сервисы</a>
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <!-- New container for the text content -->
+                    <div class="text-container p-4">
+                        <h4 class="display-4 mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
+                        <p class="mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
+                        <a href="#about" class="btn btn-dark py-sm-3 px-sm-5 me-3 animated slideInRight" data-translate="hero.getStarted">О нас</a>
+                        <a href="#services" class="btn btn-outline-dark py-sm-3 px-sm-5 animated slideInRight" data-translate="hero.ourServices">Наши сервисы</a>
                     </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Hero End -->
+
 
 
     
@@ -660,7 +666,10 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/proj3.webp" alt="Проект 3">
+                    <video controls muted autoplay loop style="width: 100%; height: auto;">
+                        <source src="img/repair-works.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="swiper-slide-content">
                         <div>
                             <h2>Управление и развитие городской инфраструктуры с использованием карт города и координат</h2>
@@ -675,7 +684,10 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <img src="img/proj2.webp" alt="Проект 2">
+                    <video controls muted autoplay loop style="width: 100%; height: auto;">
+                        <source src="img/repair-works.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="swiper-slide-content">
                         <div>
                             <h2>Отслеживание ремонтных работ в городских районах с использованием карт и координат</h2>
@@ -690,7 +702,10 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <img src="img/proj1.webp" alt="Проект 1">
+                    <video controls muted autoplay loop style="width: 100%; height: auto;">
+                        <source src="img/repair-works.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="swiper-slide-content">
                         <div>
                             <h2>Разработка модели прогнозирования траектории движения общественного транспорта</h2>
@@ -705,7 +720,10 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <img src="img/proj2.webp" alt="Проект 2">
+                    <video controls muted autoplay loop style="width: 100%; height: auto;">
+                        <source src="img/repair-works.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="swiper-slide-content">
                         <div>
                             <h2>Полностью автоматизированная система анализа безопасности города</h2>
@@ -721,6 +739,7 @@
             </div>
         </div>
     </section>
+    
     
     
 
@@ -1439,6 +1458,12 @@ swiper.slideTo(2, false, false);
 
     video.playbackRate = 1;
 });
+// Toggle the hamburger menu and sliding navigation
+function toggleMenu(menuIcon) {
+    menuIcon.classList.toggle('active');
+    document.getElementById('menu').classList.toggle('show');
+}
+
 </script>
 <script src="js/lang.js"></script>
 </body>
