@@ -30,7 +30,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap">
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
         integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
@@ -66,7 +66,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
+    <div class="container-fluid sticky-top navbar-transparent">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
@@ -82,13 +82,13 @@
 
                 <!-- Sliding Menu -->
                 <ul id="menu" class="navbar-nav ms-auto">
-                    <li><a href="#hero" class="nav-item nav-link active" data-translate="navbar.home">Главная</a></li>
-                    <li><a href="#about" class="nav-item nav-link" data-translate="navbar.about">О проекте</a></li>
-                    <li><a href="#services" class="nav-item nav-link" data-translate="navbar.services">Сервисы</a></li>
-                    <li><a href="#projects" class="nav-item nav-link" data-translate="navbar.projects">Модули</a></li>
-                    <li><a href="#contact" class="nav-item nav-link" data-translate="navbar.contact">Контакты</a></li>
+                    <li><a href="#hero" class="nav-item nav-link active" data-translate="navbar.home" style="font-size: 22px;">Главная</a></li>
+                    <li><a href="#about" class="nav-item nav-link" data-translate="navbar.about" style="font-size: 22px;">О проекте</a></li>
+                    <li><a href="#services" class="nav-item nav-link" data-translate="navbar.services" style="font-size: 22px;">Сервисы</a></li>
+                    <li><a href="#modules" class="nav-item nav-link" data-translate="navbar.projects" style="font-size: 22px;">Модули</a></li>
+                    <li><a href="#contact" class="nav-item nav-link" data-translate="navbar.contact" style="font-size: 22px;">Контакты</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-semibold" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="font-size: 22px;">
                             РУС
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -102,33 +102,44 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 hero-header mb-5 position-relative" id="hero">
+    <div class="container-fluid p-0 hero-header position-relative" id="hero">
         <video id="hero-video" class="position-absolute w-100 h-100 top-0 start-0" autoplay muted loop playsinline>
-            <source src="img/hero-video.mp4">
+            <source src="img/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="container pt-5 position-relative" style="z-index: 2;">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <!-- New container for the text content -->
-                    <div class="text-container p-4">
-                        <h4 class="display-4 mb-4 animated slideInRight" data-translate="hero.title">Инновационные решения для города</h4>
-                        <p class="mb-4 animated slideInRight" data-translate="hero.description">Цифровая платформа Ситуационный центр - это инновационное решение, предназначенное для повышения эффективности управления городскими ресурсами и улучшения качества жизни граждан. Проект включает в себя создание платформы, которая объединяет различные источники данных и предоставляет интегрированный интерфейс для мониторинга, анализа и реагирования на события в реальном времени.</p>
-                        <a href="#about" class="btn btn-dark py-sm-3 px-sm-5 me-3 animated slideInRight" data-translate="hero.getStarted">О нас</a>
-                        <a href="#services" class="btn btn-outline-dark py-sm-3 px-sm-5 animated slideInRight" data-translate="hero.ourServices">Наши сервисы</a>
-                    </div>
-                </div>
+
+        <!-- Overlay Content -->
+        <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center position-absolute top-0 start-0 w-100 h-100">
+            <h1 class="display-4 text-white mb-3" style="font-size: 34px; padding-bottom: 40px;">Ситуационный Центр - активный участник в цифровизации Алматы</h1>
+            <a href="#open-data" class="btn btn-primary mb-4">Перейти на OpenDATA</a>
+        </div>
+
+        <!-- Statistics Section at the Bottom -->
+        <div class="hero-stats d-flex justify-content-center gap-4 position-absolute bottom-0 w-100 pb-5">
+            <div class="text-white text-center mx-5"> <!-- Adding margin for additional spacing -->
+                <h2>70</h2>
+                <p style="font-size: 20px;">ГИС-слоев данных</p>
+                <p style="font-size: 20px;">городских объектов</p>
+            </div>
+            <div class="text-white text-center mx-5">
+                <h2>50+</h2>
+                <p style="font-size: 20px;">информационных и </p>
+                <p style="font-size: 20px;">аналитических модулей</p>
+            </div>
+            <div class="text-white text-center mx-5">
+                <h2>50</h2>
+                <p style="font-size: 20px;">интеграции и </p>
+                <p style="font-size: 20px;">сбор данных</p>
+            </div>
+            <div class="text-white text-center mx-5">
+                <h2>100</h2>
+                <p style="font-size: 20px;">индикаторов</p>
+                <p style="font-size: 20px;">города</p>
             </div>
         </div>
     </div>
     <!-- Hero End -->
-
-
-
-    
-
 
     <!-- Full Screen Search Start -->
     <div class="modal fade bg-white" id="searchModal" tabindex="-1">
@@ -150,881 +161,246 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5 bg-white" id="about">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/city.gif" style="width: 3500px; height: auto;">
-                        <!-- <div class="gradient-overlay"></div> -->
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" data-translate="about.heading">О нас</div>
-                    <h1 class="mb-4" data-translate="about.title">Создаем умный город вместе с передовыми технологиями</h1>
-                    <p class="mb-4" data-translate="about.description1">Проект Ситуационного центра города Алматы представляет собой важный шаг на пути к созданию умного города, где технологии и данные играют ключевую роль в устойчивом развитии, повышении эффективности управления и улучшении качества жизни всех его жителей. Этот проект демонстрирует приверженность города инновациям и стремление к созданию безопасного, комфортного и устойчивого городского пространства для всех его граждан.</p>
-                    <p class="mb-4" data-translate="about.description2"></p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.awardWinning">Повышение оперативности</span></h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.professionalStaff">Улучшение качества жизни</span></h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.support247">Оптимизация ресурсов</span></h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span data-translate="about.features.fairPrice">Прозрачность и доверие</span></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Service Start -->
-    <!-- <div class="container-fluid bg-light mt-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
-                    <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
-                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-robot fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Natural Language Processing</h5>
-                                        <p>We use NLP techniques to analyze and derive insights from text data, enabling better understanding of customer sentiments and behaviors.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-power-off fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Machine learning</h5>
-                                        <p>We develop custom machine learning models tailored to your specific business needs.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-md-4">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-graduation-cap fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Education & Science</h5>
-                                        <p>We offer geo-analytical services to help you understand location-based trends and patterns in your data.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-brain fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Predictive Analysis</h5>
-                                        <p>Our predictive analytics models help you forecast future trends and make informed decisions.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Service End -->
-
     <!-- Services Start -->
-    <section id="services" class="section-padding border-top bg-light mt-5 py-5">
+    <section id="services" class="section-padding border-top bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" data-translate="services.heading">Сервисы</div>
-                        <h1 class="display-4 fw-semibold" data-translate="services.title">Наши Решения для Умного Города Алматы</h1>
-                        <div class="line"></div>
-                        <p data-translate="services.description">Ситуационный центр города Алматы предлагает комплексную платформу для мониторинга и управления городской инфраструктурой. Наша цель - повысить эффективность управления городскими ресурсами, улучшить качество жизни горожан и обеспечить устойчивое развитие города. Изучите наши сервисы ниже:</p>
-                    </div>
-                </div>
+            <div class="section-title">
+                <h1 style="font-size: 43px; color: #000;">Основные направления для создания умного города в Алматы:</h1>
+                
             </div>
-            <div class="row g-4 text-center">
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                    <div class="service theme-shadow p-lg-5 p-4">
+            <p style="font-size: 25px; color: #000;">
+                Эти направления помогут Алматы стать удобнее и безопаснее для всех жителей, повышая уровень жизни и устойчивость города.
+            </p>
+            <div class="row">
+                <!-- Service Card 1 - City Map -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-map-pin-line"></i>
+                            <i class="ri-map-pin-2-line"></i> <!-- Updated icon for City Map -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.cityMap.title">Карта города</h5>
-                        <p data-translate="services.cityMap.description">Подробная цифровая карта города с актуальной информацией о состоянии инфраструктуры и услуг.</p>
+                        <h5>Карта города</h5>
+                        <p class="default-text">Сбор и анализ данных о городе для выявления проблем</p>
+                        <p class="hover-text"> - Инфраструктура</p>
+                        <p class="hover-text"> - Мониторинг районов</p>
+                        <p class="hover-text"> - Цифровая инклюзия</p>
+                        <p class="hover-text"> - Шаговая доступность соц. объектов</p>
+                        <p class="hover-text"> - Коммуникации</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 2 - Transport -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-community-line"></i>
+                            <i class="ri-bus-2-line"></i> <!-- Updated icon for Transport -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.cityServices.title">Городские сервисы</h5>
-                        <p data-translate="services.cityServices.description">Централизованный доступ к основным городским сервисам для удобства граждан и гостей города.</p>
+                        <h5>Транспорт</h5>
+                        <p class="default-text">Управление и оптимизация транспортной системы города.</p>
+                        <p class="hover-text"> - Мониторинг транспорта</p>
+                        <p class="hover-text"> - Мониторинг транзакции</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 3 - Ecology -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-bar-chart-line"></i>
+                            <i class="ri-leaf-line"></i> <!-- Updated icon for Ecology -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.indicators.title">Индикаторы</h5>
-                        <p data-translate="services.indicators.description">Мониторинг ключевых индикаторов для оперативного управления и принятия решений.</p>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-heart-pulse-line"></i>
-                        </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.socialSphere.title">Социальная сфера</h5>
-                        <p data-translate="services.socialSphere.description">Поддержка и развитие социальных услуг для улучшения качества жизни граждан.</p>
+                        <h5>Экология</h5>
+                        <p class="default-text">Мониторинг экологического состояния города</p>
+                        <p class="hover-text"> - Экологический мониторинг</p>
+                        <p class="hover-text"> - Зеленые насаждения</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 4 - City Services -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-global-line"></i>
+                            <i class="ri-building-line"></i> <!-- Updated icon for City Services -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.economics.title">Экономика</h5>
-                        <p data-translate="services.economics.description">Анализ экономических показателей и управление финансами города.</p>
+                        <h5>Городские сервисы</h5>
+                        <p class="default-text">Оптимизация и автоматизация услуг для улучшения качества городской среды</p>
+                        <p class="hover-text"> - Предожнения инициатив</p>
+                        <p class="hover-text"> - Встречи акима с населением</p>
+                        <p class="hover-text"> - Маслихат</p>
+                        <p class="hover-text"> - Админ маслихат</p>
+                        <p class="hover-text"> - Проблемные вопросы города</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 5 - Social Sphere -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-shield-keyhole-line"></i>
+                            <i class="ri-community-line"></i> <!-- Updated icon for Social Sphere -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.security.title">Безопасность</h5>
-                        <p data-translate="services.security.description">Обеспечение безопасности граждан и мониторинг критических ситуаций.</p>
+                        <h5>Социальная сфера</h5>
+                        <p class="default-text">Поддержка и развитие социальных услуг для улучшения качества жизни</p>
+                        <p class="hover-text"> - Мониторинг школ</p>
+                        <p class="hover-text"> - Мониторинг ДДО</p>
+                        <p class="hover-text"> - Культурные мероприятия</p>
+                        <p class="hover-text"> - Объекты культуры</p>
+                        <p class="hover-text"> - Событийный календарь</p>
+                        <p class="hover-text"> - Кружки и секции</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 6 - Economy -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-bus-2-line"></i>
+                            <i class="ri-bar-chart-line"></i> <!-- Updated icon for Economy -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.transport.title">Транспорт</h5>
-                        <p data-translate="services.transport.description">Управление и оптимизация транспортной системы города.</p>
+                        <h5>Экономика</h5>
+                        <p class="default-text">Анализ экономических показателей</p>
+                        <p class="hover-text"> - СЗПТ</p>
+                        <p class="hover-text"> - Мониторинг цен</p>
+                        <p class="hover-text"> - Количество МСБ</p>
+                        <p class="hover-text"> - Мониторинг курса валют</p>
+                        <p class="hover-text"> - Мониторинг гос. закупок</p>
+                        <p class="hover-text"> - Бюджет города</p>
+                        <p class="hover-text"> - Инвест проекты города</p>
+                        <p class="hover-text"> - Поддержка предпринимателей</p>
+                        <p class="hover-text"> - Финансы</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 7 - Urban Infrastructure -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-file-list-3-line"></i>
+                            <i class="ri-road-map-line"></i> <!-- Updated icon for Urban Infrastructure -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.documentArchive.title">Архив документов</h5>
-                        <p data-translate="services.documentArchive.description">Цифровой архив важных городских документов для удобного доступа и управления.</p>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-focus-3-line"></i>
-                        </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.developmentPrograms.title">Программы развития</h5>
-                        <p data-translate="services.developmentPrograms.description">Инициативы и проекты, направленные на устойчивое развитие города. Способствующая росту развития.</p>
+                        <h5>Городская инфраструктура</h5>
+                        <p class="default-text">Контроль и поддержка городской инфраструктуры.</p>
+                        <p class="hover-text"> - Инфраструктура</p>
+                        <p class="hover-text"> - Мониторинг районов</p>
+                        <p class="hover-text"> - Цифровая инклюзия</p>
+                        <p class="hover-text"> - Шаговая доступность соц. объектов</p>
+                        <p class="hover-text"> - Коммуникации</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 8 - Emergency Situations -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-lightbulb-flash-line"></i>
+                            <i class="ri-shield-line"></i> <!-- Updated icon for Emergency Situations -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.startupEcosystem.title">Стартап экосистема</h5>
-                        <p data-translate="services.startupEcosystem.description">Поддержка инновационных стартапов и развитие предпринимательства в городе.</p>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-bar-chart-box-line"></i>
-                        </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.analytics.title">Аналитика</h5>
-                        <p data-translate="services.analytics.description">Комплексный анализ данных для поддержки управленческих решений и планирования.</p>
+                        <h5>Чрезвычайные ситуации</h5>
+                        <p class="default-text">Построение системы мониторинга и быстрого реагирования</p>
+                        <p class="hover-text"> - ДЧС</p>
+                        <p class="hover-text"> - Админка ДЧС</p>
+                        <p class="hover-text"> - Мониторинг ЧС</p>
+                        <p class="hover-text"> - Преступность</p>
+                        <p class="hover-text"> - ДТП</p>
+                        <p class="hover-text"> - Городские видеокамеры</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
+                <!-- Service Card 9 - Development Programs -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service">
                         <div class="iconbox">
-                            <i class="ri-leaf-line"></i>
+                            <i class="ri-lightbulb-line"></i> <!-- Updated icon for Development Programs -->
                         </div>
-                        <h5 class="mt-4 mb-3" data-translate="services.ecology.title">Экология</h5>
-                        <p data-translate="services.ecology.description">Мониторинг экологического состояния города и внедрение инициатив по защите окружающей среды.</p>
+                        <h5>Программы развития</h5>
+                        <p class="default-text">Информирование жителей о важных событиях и изменениях</p>
+                        <p class="hover-text"> - Оценка цифровизации</p>
+                        <p class="hover-text"> - Админ оценки цифровизации</p>
+                        <p class="hover-text"> - Проекты ИКТ</p>
+                        <p class="hover-text"> - Бюджет народного участия</p>
+                        <p class="hover-text"> - Стратегия 2050</p>
+                        <p class="hover-text"> - Эталонный стандарт</p>
+                        <p class="hover-text"> - Новый Алматы</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- Services End -->
 
-    <!-- Feature Start -->
-    <!-- <div class="container-fluid bg-primary feature pt-5">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" data-translate="feature.heading">Why Choose Us</div>
-                    <h1 class="text-white mb-4" data-translate="feature.title">Our team at ImagineAnalytics is dedicated to providing personalized and innovative solutions tailored to meet the unique needs of your business.</h1>
-                    <p class="text-light mb-4" data-translate="feature.description">Looking to supercharge your business with cutting-edge technology? Let our expert team at ImagineAnalytics guide you through the world of data science, machine learning, and artificial intelligence. Transform your operations, optimize your processes, and unlock insights to drive success. Contact us today to learn more about how we can help your business thrive in the digital age.</p>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="">
-                            <span>1.  &nbsp;</span>
-                        </div>
-                        <span data-translate="feature.items.chatbots">Our team develops chatbot solutions to improve customer interactions.</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="">
-                            <span>2.  &nbsp;</span>
-                        </div>
-                        <span data-translate="feature.items.databases">We offer access to a wide range of databases for your research.</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="">
-                            <span>3.  &nbsp;</span>
-                        </div>
-                        <span data-translate="feature.items.services">Our services extend beyond these listed, providing comprehensive solutions.</span>
-                    </div>
-                    <div class="row g-4 pt-3">
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-users fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">400</h2>
-                                    <p class="text-white mb-0" data-translate="feature.clients">Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-check fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">370</h2>
-                                    <p class="text-white mb-0" data-translate="feature.projects">Project Complete</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img id="feature-image" class="img-fluid" src="img/feature.png" alt="">
-                </div>
+
+    <section id="modules" style="padding: 40px; background-color: #ffffff;">
+        <div style="max-width: 1200px; margin: auto;">
+            <!-- Top text section -->
+            <div style="text-align: left; margin-bottom: 20px;">
+                <h2 style="font-size: 24px; font-weight: bold; color: #333;">Интерфейс с расширенными возможностями для работы с данными</h2>
+                <p style="font-size: 16px; color: #555;">
+                    Современный интерфейс позволяет операторам легко ориентироваться и быстро находить необходимую информацию, что ускоряет реакцию на события и улучшает рабочий процесс.
+                </p>
             </div>
-        </div>
-    </div> -->
-    <!-- Feature End -->
     
-    <!-- Projects Start -->
+            <!-- Buttons and Image section in one row with modified column widths -->
+            <div style="display: flex; align-items: flex-start;">
+                <!-- Left Column: Buttons and Description (Reduced Width) -->
+                <div style="width: 40%; display: flex; flex-direction: column; gap: 15px; margin-right: 20px;">
+                    <div id="button1" onclick="changeContent(1, this)" class="button active-button" style="padding: 15px; border-radius: 8px; cursor: pointer; position: relative; border: 2px solid #1E3557;">
+                        <span style="font-weight: bold;">Визуализация данных города →</span>
+                        <p class="button-description" style="margin-top: 5px; font-size: 14px; display: block;">Комплексная система сбора, обработки и анализа данных, поступающих от различных источников в режиме реального времени.</p>
+                    </div>
+                    <div onclick="changeContent(2, this)" class="button" style="padding: 15px; border-radius: 8px; cursor: pointer; position: relative; border: 2px solid #000;">
+                        <span style="font-weight: bold;">Мониторинг показателей →</span>
+                        <p class="button-description" style="margin-top: 5px; font-size: 14px; display: none;">Мониторинг ключевых показателей для оценки качества жизни и эффективности услуг.</p>
+                    </div>
+                    <div onclick="changeContent(3, this)" class="button" style="padding: 15px; border-radius: 8px; cursor: pointer; position: relative; border: 2px solid #000;">
+                        <span style="font-weight: bold;">Интерактивная карта города →</span>
+                        <p class="button-description" style="margin-top: 5px; font-size: 14px; display: none;">Предоставляет операторам возможность легко ориентироваться и находить нужную информацию.</p>
+                    </div>
+                    <div onclick="changeContent(4, this)" class="button" style="padding: 15px; border-radius: 8px; cursor: pointer; position: relative; border: 2px solid #000;">
+                        <span style="font-weight: bold;">Интеграция городских систем →</span>
+                        <p class="button-description" style="margin-top: 5px; font-size: 14px; display: none;">Интеграция данных для единой картины состояния городских систем.</p>
+                    </div>
+                </div>
     
-    
-    <!-- Projects End -->
-
-
-    <!-- FAQs Start -->
-    <!-- <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
-                <h1 class="mb-4">Frequently Asked Questions</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ1">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    How can data analytics be used to personalize the customer experience in retail?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Our expertise, dedication to ongoing learning, and ability to tailor solutions to individual business needs make us the ideal partner for companies looking to harness the power of artificial intelligence effectively and efficiently.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Can you help us develop a predictive analytics model to forecast our sales trends more accurately?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Yes, we can develop a predictive analytics model tailored to your sales data to help you forecast trends more accurately. Our team will work closely with you to understand your specific requirements and ensure the model meets your needs.
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How can machine learning improve our customer segmentation and targeting strategies?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Machine learning can provide real-time insights into customer behavior, allowing you to adapt your segmentation and targeting strategies quickly in response to changing market conditions or customer preferences.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Do you have experience implementing natural language processing solutions for analyzing customer feedback and reviews?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Absolutely, we have extensive experience in implementing natural language processing solutions for analyzing customer feedback and reviews. Our NLP models can help you extract valuable insights from text data to improve your products or services.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ2">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How can we leverage machine learning for personalized marketing campaigns?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Anomaly detection algorithms can help improve fraud detection by identifying unusual patterns or outliers in your financial transactions. Our team can develop and implement these algorithms to enhance the security of your financial operations.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Do you offer recommender system solutions to enhance our e-commerce platform's product recommendations?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Yes, our recommender system solutions can enhance your e-commerce platform's product recommendations by analyzing user behavior and preferences. This can lead to increased sales and customer satisfaction.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
-                            <h2 class="accordion-header" id="headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    What are the key considerations for deploying and monitoring machine learning models in a production environment?
-                                </button>
-                            </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    We can help you automate decision-making processes in your supply chain management by developing machine learning models that analyze data and make recommendations based on predefined criteria. This can improve efficiency and reduce costs.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
-                            <h2 class="accordion-header" id="headingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    How can machine learning improve my business operations?
-                                </button>
-                            </h2>
-                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Machine learning can improve your business operations by automating repetitive tasks, identifying patterns in data for better decision-making, and predicting outcomes to optimize processes.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- FAQs Start -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
-                    <h1 class="mb-4">Meet Our Experienced Team Members</h1>
-                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
-                                        <h5 class="mb-0">Boris Johnson</h5>
-                                        <small>Founder & CEO</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
-                                        <h5 class="mb-0">Adam Crew</h5>
-                                        <small>Executive Manager</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-md-4">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
-                                        <h5 class="mb-0">Kate Winslet</h5>
-                                        <small>Co Founder</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
-                                        <h5 class="mb-0">Cody Gardner</h5>
-                                        <small>Project Manager</small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/company/imaginecommons/"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    
-    <!-- Team End -->
-    <!-- Projects Start -->
-    <!-- Projects Start -->
-<section class="container-xxl py-5" id="projects">
-    <div class="row">
-        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-            <div class="section-title">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Модули</div>
-                <h1 class="display-4 fw-semibold">Исследуйте наши проекты и аналитические кейсы по городу Алматы</h1>
-                <div class="line"></div>
-                <p>В Ситуационном Центре города Алматы мы предоставляем кейсы по аналитике и проекты, направленные на улучшение городской среды и управление городской инфраструктурой. Наше портфолио включает разнообразные проекты, использующие передовые аналитические решения для поддержки городских инициатив и повышения качества жизни жителей Алматы. Ознакомьтесь с нашими проектами и кейсами, чтобы увидеть, как Ситуационный Центр может помочь вам использовать данные для улучшения управления городом и открытия новых возможностей.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="img/proj1.webp" alt="Project 1" style="width: 100%; height: auto;">
-                <div class="swiper-slide-content">
-                    <div>
-                        <h2>Управление и развитие городской инфраструктуры с использованием карт города и координат</h2>
-                        <a href="https://opendata.smartalmaty.kz/" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" target="_blank">Подробнее</a>
-                        <a class="show-more" target="_blank" href="">
-                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="img/proj2.webp" alt="Project 2" style="width: 100%; height: auto;">
-                <div class="swiper-slide-content">
-                    <div>
-                        <h2>Отслеживание ремонтных работ в городских районах с использованием карт и координат</h2>
-                        <a href="https://opendata.smartalmaty.kz/" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" target="_blank">Подробнее</a>
-                        <a class="show-more" href="" target="_blank">
-                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="img/proj3.webp" alt="Project 3" style="width: 100%; height: auto;">
-                <div class="swiper-slide-content">
-                    <div>
-                        <h2>Разработка модели прогнозирования траектории движения общественного транспорта</h2>
-                        <a href="https://opendata.smartalmaty.kz/" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" target="_blank">Подробнее</a>
-                        <a class="show-more" href="" target="_blank">
-                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="img/proj4.webp" alt="Project 4" style="width: 100%; height: auto;">
-                <div class="swiper-slide-content">
-                    <div>
-                        <h2>Полностью автоматизированная система анализа безопасности города</h2>
-                        <a href="https://opendata.smartalmaty.kz/" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-2 animated" target="_blank">Подробнее</a>
-                        <a class="show-more" href="" target="_blank">
-                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    
-    
-
-            <!-- <div class="swiper-slide">
-                    <img src="assets/images/about-1.jpg" alt="">  
-                <div class="swiper-slide-content">
-                    <div>
-                        <h2>
-                            Italy
-                        </h2>
-                        <p>
-                            Located in the middle of the Mediterranean Sea, it consists of a peninsula delimited by
-                            the Alps and surrounded by several islands. Italy shares land borders with France,
-                            Switzerland, Austria, Slovenia and the enclaved microstates of Vatican City and San
-                            Marino.
-                        </p>
-                        <a class="show-more" href="" target="_blank">
-                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="assets/images/about-1.jpg" alt="">  
-            <div class="swiper-slide-content">
-                <div>
-                    <h2>
-                        Italy
-                    </h2>
-                    <p>
-                        Located in the middle of the Mediterranean Sea, it consists of a peninsula delimited by
-                        the Alps and surrounded by several islands. Italy shares land borders with France,
-                        Switzerland, Austria, Slovenia and the enclaved microstates of Vatican City and San
-                        Marino.
-                    </p>
-                    <a class="show-more" href="" target="_blank">
-                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div> -->
-            
-        </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Add Navigation -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-
-        </div>
-    </div>
-    
-    
-    <!-- Modal Structure -->
-    <div class="modal fade" id="1" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Development of an economic diversification strategy</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj4.webp" alt="" class="img-fluid mb-3">
-                    <p>Development of tools and strategies to improve the structure of the economy of the Central Asian country through deepening technological diversification and strengthening export potential.</p>
-                    <p>The project provided government agencies with effective analytical tools to support informed economic policy decisions that promote technological renewal and economic growth.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="2" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1"> Research on the impact of the global health crisis on the economy</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj3.webp" alt="" class="img-fluid mb-3">
-                    <p>Analysis of the impact of the pandemic on economic processes in Central Asia, in order to develop strategic solutions to minimize economic losses.</p>
-                    <p>The project provided the customer with in-depth analytical data and forecasts that helped in formulating effective strategies to mitigate the effects of the pandemic on the economy.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="3" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Forecasting and research of the construction materials market</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj2.webp" alt="" class="img-fluid mb-3">
-                    <p>Analysis and forecasting of the development of the construction materials market in Central Asia to optimize government support for the industry.</p>
-                    <p>The information provided by the project helped the customer to plan strategic measures to stimulate the growth and sustainability of the industry.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="4" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Analysis of mortgage lending and state support programs for housing construction</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj1.webp" alt="" class="img-fluid mb-3">
-                    <p>Assessment of the availability and effectiveness of mortgage lending and government programs to support housing construction in Central Asia.</p>
-                    <p>The analytics developed during the project became the basis for optimizing banking products and government programs aimed at improving the living conditions of the population.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="5" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Development of Cloud Architecture for Seamless Integration of Machine Learning Models with the Cloud</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj5.webp" alt="" class="img-fluid mb-3">
-                    <p>Developed an architecture using Terraform (IaC) for 10 different machine learning models with a more reliable storage and access system, offering high computational power.</p>
-                    <p>The bank received a flexible and scalable cloud architecture, significantly improving the performance of machine learning models. The deployment time for new models was reduced by 50%, and integration with cloud services significantly reduced operational costs.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="6" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Development of a Model for Predicting the Path of a Miner Underground</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj6.webp" alt="" class="img-fluid mb-3">
-                    <p>Developed an algorithm to predict miner behavior in the mine using statistical models for quick localization in case of emergencies and real-time probable localization for safety.</p>
-                    <p>The developed model significantly improved safety levels in mines, enabling quick response in emergency situations. The probability of successfully finding a miner in case of an emergency increased by 70%, reducing rescue operation times and minimizing risk to miners' lives.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="7" tabindex="-1" aria-labelledby="Label1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Label1">Fraud Detection System</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/proj7.webp" alt="" class="img-fluid mb-3">
-                    <p>Our web service is designed for effective detection and prevention of anti-spoofing, providing reliable protection against fraudulent attempts and forgery. Used advanced algorithms and machine learning models based on comprehensive data analysis to detect and block unauthorized access attempts and forgery.</p>
-                    <p>The implementation of the system allowed banks to reduce fraud levels by 85% thanks to the high-accuracy detection and prevention system.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Structure -->
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
-                    <h1 class="mb-4">What Say Our Clients!</h1>
-                    <p class="mb-4">Data analytics has the potential to drive positive change and create a better world by enabling organizations and decision-makers to make informed decisions based on data-driven insights. By harnessing the power of data, we can address complex global challenges such as climate change, poverty, healthcare disparities, and inequality. Through data analytics, we can uncover trends, patterns, and correlations that can lead to more effective solutions and improve the well-being of individuals and communities around the world. eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-                </div>
-                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel border-start border-primary">
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">ImagineAnalytics stands out as the premier choice for businesses seeking advanced machine learning services due to the comprehensive suite of offerings we provide. From developing custom machine learning models and predictive analytics to natural language processing, computer vision, anomaly detection, recommender systems, automated decision making, model deployment and monitoring, machine learning consultation, continuous learning, and more, we offer a holistic approach to leveraging AI for driving innovation and growth.</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Working with ImagineAnalytics was a game-changer for our business. Their predictive analytics model not only helped us forecast sales trends accurately but also allowed us to make data-driven decisions that positively impacted our bottom line. Their commitment to excellence and innovation is truly commendable.</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">ImagineAnalytics exceeded our expectations with their natural language processing solutions. They helped us analyze customer feedback more effectively, leading to improved product development and customer satisfaction. Their team's professionalism and expertise made the entire process seamless. We look forward to collaborating with them again.</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Empty Container for Increasing Height -->
-    <!-- <div class="empty-container"></div> -->
-
-    <!-- Contact Start -->
-    <!-- <div class="container-fluid bg-primary newsletter py-5" id="contact">
-        <div class="container" style="padding: 5px; padding-top: 20px;">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-center wow fadeIn robot-container" data-wow-delay="0.3s">
-                    <div class="message-box mx-auto">
-                        <span class="word"></span>
-                        <div class="author">- Tove Jansonn</div>  -->
-                        <!-- Added author reference -->
-                    <!-- </div>
-                    <img class="img-fluid robot-image" src="img/newsletter.png" alt="Robot" id="robot">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" data-translate="contact.heading">Get in touch</div>
-                    <p id="contact-title" class="text-white mb-4" data-translate="contact.title">Whether you're looking to kickstart a new project, explore partnership opportunities, or simply have a question for our team, we're here to help. Reach out to us today to start a conversation about how ImagineAnalytics can support your data analytics and AI needs. Our experts are eager to collaborate with you and drive impactful results for your organization. Let's connect and embark on a journey towards data-driven success together.</p>
-                    <div class="position-relative w-100 mt-3 mb-2">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5 mb-3" type="text" placeholder="Enter Your Name" style="height: 48px;" data-translate="contact.namePlaceholder">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5 mb-3" type="text" placeholder="Enter Your Email" style="height: 48px;" data-translate="contact.emailPlaceholder">
-                        <textarea class="form-control border-0 rounded w-100 ps-4 pe-5 mb-3" rows="4" placeholder="Enter Your Message" style="height: 100px;" data-translate="contact.messagePlaceholder"></textarea>
-                        <button type="button" class="btn btn-light rounded-pill px-4 py-2"><i class="fa fa-paper-plane text-primary me-2"></i><span data-translate="contact.submitButton">Submit</span></button>
-                    </div> -->
-                    <!-- <small class="text-white-50" data-translate="contact.disclaimer">Little dear, by all means do exactly as you like.</small> -->
-                <!-- </div>
-            </div>
-        </div>
-    </div> -->
-<!-- Contact End -->
-    <!-- CONTACT -->
-    <section class="section-padding bg-light" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <h1 class="display-4 text-white fw-semibold" style="padding-bottom: 50px;">Свяжитесь с нами</h1>
-                        <div class="line bg-white"></div>
-                        <!-- <p class="text-white" style="padding-bottom: 40px;">
-                            Если у вас есть вопросы, предложения по сотрудничеству или вы хотите обсудить новый проект, наша команда всегда готова помочь. Свяжитесь с нами сегодня, чтобы узнать, как Ситуационный Центр может поддержать ваши инициативы в области управления городом, аналитики данных и цифровых технологий. Наши специалисты с радостью помогут вам достичь значимых результатов и улучшить качество городской среды. Давайте начнем сотрудничество для достижения общих целей и развития нашего города.
-                        </p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
-                <div class="col-lg-8">
-                    <form id="contactForm" class="row g-3 p-lg-5 p-4 bg-white theme-shadow" style="border-radius: 50px;">
-                        <h1 style="position: relative; justify-content: center; align-items: center; display: flex;">Форма обращения</h1>
-                        <div class="form-group col-lg-12">
-                            <input type="email" class="form-control" placeholder="Введите адрес электронной почты" style="border-radius: 20px;" id="email" required name="email">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <input type="tel" class="form-control" placeholder="Введите номер телефона в формате +77748259585" style="border-radius: 20px;" id="phone" pattern="^\+7\d{10}$" required name="phone">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <textarea name="message" rows="5" class="form-control" placeholder="Введите сообщение" style="border-radius: 20px;" required name="message"></textarea>
-                        </div>
-                        <div class="form-group col-lg-12 d-grid">
-                            <button class="btn btn-brand text-white" style="background-color: #143b6c;" type="submit">Отправить сообщение</button>
-                        </div>
-                    </form>
+                <!-- Right Column: Image (Increased Width) -->
+                <div style="width: 60%; display: flex; align-items: center; justify-content: center;">
+                    <img id="content-image" src="img/hero1212.png" alt="Data Interface Screenshot" style="width: 100%; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                 </div>
             </div>
         </div>
     </section>
     
+
+    <!-- Contact Start -->
+    <div style="background: radial-gradient(circle, #1E34A0 0%, #1C212C 100%); padding: 40px;">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            
+            <!-- Left Column: Text Content in White Container with Rounded Borders -->
+            <div style="background-color: white; border-radius: 15px; padding: 20px; color: black; max-width: 600px; margin-right: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                <h2 style="font-size: 24px; font-weight: bold;">Возможности Ситуационного Центра</h2>
+                <p style="font-size: 16px; margin-bottom: 20px;">
+                    Центр отслеживает в режиме реального времени городские процессы, выявляет угрозы и помогает оперативно принимать управленческие решения для обеспечения безопасности и устойчивого развития.
+                </p>
+                <a href="#open-data" class="btn btn-primary mb-4" style="background-color: #0d47a1; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Перейти к данным</a>
+                <div style="margin-top: 20px;">
+                    <div style="margin-bottom: 10px;">
+                        <strong>01. Анализ и прогнозирование данных</strong>
+                        <p style="font-size: 14px; color: #555;">
+                            Применение аналитических алгоритмов для анализа данных и прогнозирования возможных происшествий.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <strong>02. Визуализация данных</strong>
+                        <p style="font-size: 14px; color: #555;">
+                            Данные визуализируются на интерактивных панелях и картах, что облегчает анализ ситуации и позволяет видеть полную картину происходящего в городе.
+                        </p>
+                    </div>
+                    <div>
+                        <strong>03. Прозрачность и отчетность</strong>
+                        <p style="font-size: 14px; color: #555;">
+                            Центр предоставляет отчеты и статистику, которые повышают прозрачность работы и способствуют доверию граждан к городским службам и руководству.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Robot Image -->
+            <div style="display: flex; justify-content: center;">
+                <img src="img/robosit.png" alt="Robot" style="max-width: 600px; height: auto;">
+            </div>
+        </div>
+    </div>
     
+    <!-- Contact End -->
     
 
     <!-- Counter Start -->
-    <div class="marquee">
+    <div class="marquee" style="background: #20203C">
         <ul class="marquee-content" >
             <li><img src="img/uc-logo.svg"></li>
             <li><img src="img/akimat-logo.svg"></li>
@@ -1033,147 +409,108 @@
         </ul>
     </div>
     
-    <!-- Counter End -->
-
-    <!-- Counter Start -->
-    <!-- <section id="counter" class="section-padding background-image-foot">
-        <div class="container text-center">
-            <div class="row g-4">
-                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                    <h1 class="text-black display-4" id="page-views">0</h1>
-                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.pageViews">Page Views</h6>
-                </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <h1 class="text-black display-4" id="unique-users">0</h1>
-                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.uniqueUsers">Unique Users</h6>
-                </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <h1 class="text-black display-4" id="active-sessions">0</h1>
-                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.activeSessions">Active Sessions</h6>
-                </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                    <h1 class="text-black display-4" id="bounce-rate">0%</h1>
-                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.bounceRate">Bounce Rate</h6>
-                </div>
-            </div> -->
-            <!-- <div class="row g-4">
-                <div class="col-12" data-aos="fade-down" data-aos-delay="550">
-                    <h2 class="text-black display-4" id="most-popular-section">N/A</h2>
-                    <h6 class="text-uppercase mb-0 text-black mt-3" data-translate="counter.mostPopularSection">Most Popular Section</h6>
-                </div>
-            </div> -->
-        <!-- </div>
-      </section> -->
-    <!-- Counter End -->
-
+    <!-- CONTACT -->
+    <div style="background: radial-gradient(circle, #1E34A0 0%, #1C212C 100%); padding: 50px;">
+        <div style="display: flex; max-width: 1200px; margin: auto; color: white;">
+            <!-- Left side: Contact Information -->
+            <div style="max-width: 40%; padding-right: 30px;">
+                <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #fff;">Есть вопросы?</h2>
+                <p style="margin-bottom: 10px;">
+                    Заполните форму и мы свяжемся с Вами в ближайшее время.
+                </p>
+                <p style="font-weight: bold; display: flex; align-items: center;">
+                    <!-- Email Icon and Clickable Email Address -->
+                    <i class="ri-mail-send-line" style="margin-right: 8px; font-size: 16px;"></i>
+                    <a href="mailto:info@sit.center.com" style="color: white; text-decoration: none;">info@sit.center.com</a>
+                </p>
+            </div>
+            
+            <!-- Right side: Contact Form -->
+            <div style="background-color: white; padding: 30px; border-radius: 10px; width: 60%; color: #333;">
+                <form>
+                    <label for="name" style="font-weight: bold;">Имя*</label>
+                    <input type="text" id="name" placeholder="Введите Ваше имя" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">
+                    
+                    <label for="email" style="font-weight: bold;">Email*</label>
+                    <input type="email" id="email" placeholder="Введите Ваш Email" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">
+                    
+                    <label for="comment" style="font-weight: bold;">Комментарий*</label>
+                    <textarea id="comment" placeholder="Введите Ваш комментарий" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;" rows="4"></textarea>
+                    
+                    <button type="submit" style="background-color: #1E34A0; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Отправить</button>
+                </form>
+                <p style="margin-top: 10px; font-size: 12px; color: #666;">
+                    Нажимая "Отправить", я принимаю условия и даю своё согласие на политику конфиденциальности.
+                </p>
+            </div>
+        </div>
+    </div>
+    
 
      <!-- Footer Start -->
-     <footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="ri-map-pin-fill"></i>
-                            <div class="cta-text">
-                                <h4 data-translate="footer.findUs">Адрес</h4>
-                                <span>Проспект Абая, 90</span>
-                            </div>
+<footer class="footer-section" style="background: #20203C; padding: 50px;">
+    <div class="container">
+        <!-- Top section with email and address -->
+        <div style="display: flex; justify-content: space-between; color: #ffffff; font-size: 14px; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center;">
+                <i class="ri-map-pin-line" style="margin-right: 8px;"></i> г. Алматы Абая, 90
+            </div>
+            <div style="display: flex; align-items: center;">
+                <i class="ri-mail-send-line" style="margin-right: 8px;"></i> info@sit.center.com
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid #ffffff; margin: 0;">
+
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="ri-phone-fill"></i>
-                            <div class="cta-text">
-                                <h4 data-translate="footer.callUs">Телефон</h4>
-                                <span>+7 775 824 9686</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="ri-mail-send-fill"></i>
-                            <div class="cta-text">
-                                <h4 data-translate="footer.mailUs">Почта</h4>
-                                <span>sitcenter@almatydc.kz</span>
-                            </div>
+                        <div class="footer-text">
+                            <p data-translate="footer.subscribeDefinition">
+                                Проект Ситуационного центра города Алматы направлен на создание умного города, где технологии и данные используются для устойчивого развития и улучшения качества жизни всех его жителей.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="img/logo-footer.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p data-translate="footer.subscribeDefinition">Проект Ситуационного центра города Алматы направлен на создание умного города, где технологии и данные используются для устойчивого развития и улучшения качества жизни всех его жителей.</p>
-                            </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3 data-translate="footer.usefulLinks">Полезные ссылки</h3>
                         </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><a href="#" data-translate="navbar.home" style="color: #ffffff;">Главная</a></li>
+                            <li><a href="#" data-translate="navbar.about" style="color: #ffffff;">О нас</a></li>
+                            <li><a href="#" data-translate="navbar.services" style="color: #ffffff;">Услуги</a></li>
+                            <li><a href="#" data-translate="navbar.contact" style="color: #ffffff;">Контакты</a></li>
+                        </ul>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3 data-translate="footer.usefulLinks">Полезные ссылки</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#" data-translate="navbar.home">Главная</a></li>
-                                <li><a href="#" data-translate="navbar.about">О нас</a></li>
-                                <li><a href="#" data-translate="navbar.services">Услуги</a></li>
-                                <!-- <li><a href="#">Портфолио</a></li> -->
-                                <li><a href="#" data-translate="navbar.contact">Контакты</a></li>
-                                <!-- <li><a href="#">О компании</a></li> -->
-                                <!-- <li><a href="#">Наши услуги</a></li> -->
-                                <!-- <li><a href="#">Свяжитесь с нами</a></li> -->
-                            </ul>
+                </div>                    
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3 data-translate="footer.subscribe">Узнайте больше</h3>
                         </div>
-                    </div>                    
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3 data-translate="footer.subscribe">Узнайте больше</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <!-- <p data-translate="footer.subscribeText">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p> -->
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Укажите вашу почту">
-                                    <button><i class="ri-send-plane-line"></i></button>
-                                </form>
-                            </div>
+                        <div class="footer-text mb-25">
+                            <!-- <p data-translate="footer.subscribeText">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p> -->
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Укажите вашу почту">
+                                <button><i class="ri-send-plane-line"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p class="mb-0">© Copyright 2018 <span style="color: rgb(255, 255, 255);">Ситуационный Центр</span>. Все права защищены.<a href="https://imaginecommons.com/" style="color: rgb(255, 255, 255);"></a></p>
-                        </div>                        
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#" data-translate="navbar.home">Главная</a></li>
-                                <li><a href="#">Условия</a></li>
-                                <li><a href="#">Конфиденциальность</a></li>
-                                <li><a href="#">Политика</a></li>
-                                <li><a href="#" data-translate="navbar.contact">Контакты</a></li>
-                                <!-- <li><p class="mb-0" data-translate="footer.designedBy">Designed with 🧡 By <a href="https://brainwave-umber-two.vercel.app">iTry</a></p></li> -->
-                            </ul>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
+    </div>
+</footer>
+<!-- Footer End -->
+
 
 
    <!-- Back to Top -->
@@ -1453,6 +790,65 @@ function toggleMenu(menuIcon) {
     menuIcon.classList.toggle('active');
     document.getElementById('menu').classList.toggle('show');
 }
+
+
+function changeContent(contentId, button) {
+        // Reset all buttons to inactive state
+        document.querySelectorAll('.button').forEach(btn => {
+            btn.classList.remove('active-button');
+            btn.style.backgroundColor = '#fff';
+            btn.style.color = '#1E3557';
+            btn.style.border = '2px solid #000';  // Set inactive border color to black
+        });
+
+        // Set the clicked button to active
+        button.classList.add('active-button');
+        button.style.backgroundColor = '#1E3557';
+        button.style.color = '#fff';
+        button.style.border = '2px solid #1E3557';  // Active border color
+
+        // Hide all descriptions first
+        document.querySelectorAll('.button-description').forEach(description => {
+            description.style.display = 'none';
+        });
+
+        // Show the description inside the clicked button
+        const description = button.querySelector('.button-description');
+        if (description) {
+            description.style.display = 'block';
+        }
+
+        // Update the image based on the contentId
+        const contentImage = document.getElementById('content-image');
+        switch(contentId) {
+            case 1:
+                contentImage.src = "img/hero1212.png";
+                contentImage.alt = "Визуализация данных города";
+                break;
+            case 2:
+                contentImage.src = "img/hero1213.png";
+                contentImage.alt = "Мониторинг показателей";
+                break;
+            case 3:
+                contentImage.src = "img/hero1214.png";
+                contentImage.alt = "Интерактивная карта города";
+                break;
+            case 4:
+                contentImage.src = "img/hero1215.png";
+                contentImage.alt = "Интеграция городских систем";
+                break;
+            default:
+                contentImage.src = "img/hero1212.png";
+        }
+    }
+
+    // Trigger the default selection on page load
+    window.onload = function() {
+        const firstButton = document.getElementById('button1');
+        changeContent(1, firstButton);
+    };
+
+
 
 </script>
 <script src="js/lang.js"></script>

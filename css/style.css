@@ -42,6 +42,11 @@
     z-index: 99;
 }
 
+
+body {
+    background-color: #ffffff;
+}
+
 /*** Service ***/
 .service {
     position: relative;
@@ -82,21 +87,134 @@
 }
 
 .service:hover .iconbox {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    background-color: #fff;
+    color: rgb(53, 117, 255);
+}
+
+.service .default-text {
+    display: block;
+}
+
+.service .hover-text {
+    display: none;
+}
+
+.service:hover .default-text {
+    display: none;
+}
+
+.service:hover .hover-text {
+    display: block;
+}
+
+/* Section Styling */
+#services {
+    padding: 50px 0;
+}
+
+.section-title {
+    
+    margin-bottom: 30px;
+}
+
+.section-title h1 {
+    font-size: 2rem;
+    color: #143b6c;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1rem;
+    color: #606060;
+}
+
+/* Service Card Styling */
+.service {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .iconbox {
-    background-color: #f0f0f0;
-    border-radius: 15px; /* Making the iconbox circular */
-    display: inline-block;
-    width: 64px; /* Ensure width and height are equal */
-    height: auto; /* Ensure width and height are equal */
+    background-color: #d8e9ff;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: inline-flex; /* Aligns iconbox with text */
+    align-items: center; /* Vertically centers the icon within the box */
+    justify-content: flex-start; /* Align icon to the left */
     font-size: 24px;
-    color: #143b6c; /* Your brand color */
+    color: #1980ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a soft shadow */
+}
 
-    align-items: center; /* Centering the icon */
-    justify-content: center; /* Centering the icon */
+
+
+.service h5 {
+    font-size: 1.2rem;
+    color: #143b6c;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+/* Grid Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col-lg-4, .col-sm-6 {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    min-width: 280px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-lg-4, .col-sm-6 {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-4, .col-sm-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.iconbox {
+    background-color: #fff;
+    border-radius: 15px; /* Making the iconbox circular */
+    display: flex;
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+    color: rgb(53, 117, 255); /* Your brand color */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .iconbox i {
@@ -112,6 +230,10 @@
     position: relative;
 }
 
+
+.bg-light {
+    background-color: #fff !important;
+}
 
 
 #counter.background-image .container {
@@ -181,6 +303,235 @@ h1, .h1 {
     transition: .5s;
 }
 
+/* Set background color only for the navbar */
+.sticky-top {
+    background-color: transparent; /* Replace with your desired navbar color */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Make navbar transparent and on top */
+.navbar-transparent {
+    
+}
+
+/* Ensure the video covers the full viewport and starts from the very top */
+.hero-header {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -100px; /* Adjust if there is extra space above the video */
+}
+
+#hero-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps the video behind the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    z-index: 1; /* Ensures text and button are above the video */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark overlay to improve text readability */
+    padding: 20px;
+}
+
+
+.hero-overlay .btn {
+    background-color: #1a73e8; /* Electric blue color for the button */
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.hero-overlay .btn:hover {
+    background-color: #0d47a1; /* Darker blue shade on hover */
+    color: #ffffff;
+}
+
+.hero-stats {
+    z-index: 1; /* Ensures stats are above the video */
+    background-color: transparent !important; /* Optional: dark overlay for readability */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.hero-stats h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.hero-stats p {
+    margin: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hero-stats h2 {
+        font-size: 24px; /* Adjust as needed for mobile */
+    }
+    .hero-stats p {
+        font-size: 16px; /* Adjust as needed for mobile */
+    }
+}
+
+
+.data-interface-section {
+    background-color: #ffffff;
+}
+
+.text-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #555;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.button {
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.highlighted-button {
+    background-color: #1d3557;
+    color: #fff;
+}
+
+.regular-button {
+    background-color: #fff;
+    color: #1d3557;
+    border: 2px solid #d1d5db;
+}
+
+.image-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-group .button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-group .button.active,
+.button-group .button:hover {
+    background-color: #143b6c;
+    color: #ffffff;
+}
+
+.button-description {
+    display: none; /* Hide descriptions initially */
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.button.active .button-description {
+    display: block; /* Show description for the active button */
+}
+
+.button.active {
+    background-color: #1d3557;
+    color: #fff;
+}
+
+
+#content-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-column {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-header {
+    background: url('path/to/background-image.jpg') no-repeat center center/cover;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.statistics h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.statistics p {
+    font-size: 1rem;
+}
+
+
 .navbar {
     padding: 0px 0 !important;
     height: 75px;
@@ -196,7 +547,7 @@ h1, .h1 {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: rgba(0, 0, 0, 1); /* Black text on hover and active */
+    color: rgb(255, 255, 255); /* Black text on hover and active */
 }
 
 /* Hamburger Icon Styling */
@@ -210,7 +561,7 @@ h1, .h1 {
 
 .ham8 .line {
     fill: none;
-    stroke: #000000; /* Black color for hamburger lines */
+    stroke: #ffffff; /* Black color for hamburger lines */
     stroke-width: 5.5;
     stroke-linecap: round;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms;
@@ -252,7 +603,7 @@ h1, .h1 {
 /* Slide-in menu (mobile & tablet) */
 .navbar .navbar-nav {
     padding: 0 15px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(0 82 131 / 84%);
     position: fixed;
     top: 0;
     right: 0;
@@ -276,7 +627,7 @@ h1, .h1 {
     margin-right: 0;
     padding: 15px 0;
     font-size: 24px;
-    color: #000000; /* Black text in the sliding menu */
+    color: #ffffff; /* Black text in the sliding menu */
     text-align: center;
     width: 100%;
     display: block;
@@ -303,7 +654,7 @@ h1, .h1 {
     .navbar .navbar-nav .nav-link {
         font-size: 16px;
         padding: 0 15px;
-        color: rgba(0, 0, 0, .7); /* Black text for desktop view */
+        color: rgb(255, 255, 255); /* Black text for desktop view */
     }
 }
 
@@ -318,12 +669,7 @@ h1, .h1 {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom, 
-        rgba(20, 59, 108, 0.8), 
-        #0d1825
-    ), 
-    url(../img/orig.jpeg);
+    
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -615,32 +961,82 @@ h1, .h1 {
 } */
 
 /*** Newsletter ***/
+/* Unique styles for the newsletter section */
 .newsletter {
-    background: url(../img/bg-hero.png) center center no-repeat;
-    background-size: cover;
+    background-color: #0d6efd; /* Blue background */
+    padding: 40px 0;
 }
 
-@media (min-width: 992px) {
-    .newsletter .container {
-        max-width: 100% !important;
-    }
+.newsletter-text {
+    color: #ffffff;
+    font-size: 16px;
+}
 
-    .newsletter .newsletter-text  {
-        padding-right: calc(((100% - 960px) / 2) + .75rem);
+.newsletter-text .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.newsletter-text input,
+.newsletter-text textarea {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.newsletter-text button {
+    background-color: #ffffff;
+    color: #0d6efd;
+}
+
+.robot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-box {
+    background-color: #1d3557;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.message-box .word {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.message-box .author {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.robot-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    /* Responsive adjustments for smaller screens */
+    .newsletter .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter-text {
+        margin-bottom: 20px;
+    }
+    
+    .robot-container {
+        margin-top: 20px;
     }
 }
 
-@media (min-width: 1200px) {
-    .newsletter .newsletter-text  {
-        padding-right: calc(((100% - 1140px) / 2) + .75rem);
-    }
-}
-
-@media (min-width: 1400px) {
-    .newsletter .newsletter-text  {
-        padding-right: calc(((100% - 1320px) / 2) + .75rem);
-    }
-}
 
 
 /*** Case Study ***/
@@ -793,7 +1189,6 @@ ul {
 }
 
 .footer-section {
-    background: #04264e url('../img/footer.png') no-repeat center center !important;
     background-size: cover;
     position: relative;
     color: #ffffff;
@@ -1053,7 +1448,7 @@ ul {
 }
 
 .bg-primary {
-    background-color: #fff !important;
+    background-color: #20203C !important;
   }
 
 .slider-container{
@@ -1247,3 +1642,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+
+
