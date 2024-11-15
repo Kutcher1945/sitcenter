@@ -108,16 +108,16 @@
             <source src="img/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
+    
         <!-- Overlay Content -->
         <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center position-absolute top-0 start-0 w-100 h-100">
             <h1 class="display-4 text-white mb-3" style="font-size: 34px; padding-bottom: 40px;">Ситуационный Центр - активный участник в цифровизации Алматы</h1>
             <a href="#open-data" class="btn btn-primary mb-4">Перейти на OpenDATA</a>
         </div>
-
+    
         <!-- Statistics Section at the Bottom -->
         <div class="hero-stats d-flex justify-content-center gap-4 position-absolute bottom-0 w-100 pb-5">
-            <div class="text-white text-center mx-5"> <!-- Adding margin for additional spacing -->
+            <div class="text-white text-center mx-5">
                 <h2>70</h2>
                 <p style="font-size: 20px;">ГИС-слоев данных</p>
                 <p style="font-size: 20px;">городских объектов</p>
@@ -138,7 +138,7 @@
                 <p style="font-size: 20px;">города</p>
             </div>
         </div>
-    </div>
+    </div>    
     <!-- Hero End -->
 
     <!-- Full Screen Search Start -->
@@ -325,10 +325,10 @@
                 </p>
             </div>
     
-            <!-- Buttons and Image section in one row with modified column widths -->
-            <div style="display: flex; align-items: flex-start;">
-                <!-- Left Column: Buttons and Description (Reduced Width) -->
-                <div style="width: 40%; display: flex; flex-direction: column; gap: 15px; margin-right: 20px;">
+            <!-- Buttons and Image section with responsive layout -->
+            <div class="module-content" style="display: flex; align-items: flex-start; flex-wrap: wrap;">
+                <!-- Left Column: Buttons and Description (Responsive Width) -->
+                <div style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 15px; margin-right: 20px;">
                     <div id="button1" onclick="changeContent(1, this)" class="button active-button" style="padding: 15px; border-radius: 8px; cursor: pointer; position: relative; border: 2px solid #1E3557;">
                         <span style="font-weight: bold;">Визуализация данных города →</span>
                         <p class="button-description" style="margin-top: 5px; font-size: 14px; display: block;">Комплексная система сбора, обработки и анализа данных, поступающих от различных источников в режиме реального времени.</p>
@@ -347,8 +347,8 @@
                     </div>
                 </div>
     
-                <!-- Right Column: Image (Increased Width) -->
-                <div style="width: 60%; display: flex; align-items: center; justify-content: center;">
+                <!-- Right Column: Image (Responsive Width) -->
+                <div style="width: 100%; max-width: 700px; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
                     <img id="content-image" src="img/hero1212.png" alt="Data Interface Screenshot" style="width: 100%; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                 </div>
             </div>
@@ -357,11 +357,11 @@
     
 
     <!-- Contact Start -->
-    <div style="background: radial-gradient(circle, #1E34A0 0%, #1C212C 100%); padding: 40px;">
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+    <div id="about" style="background: radial-gradient(circle, #1E34A0 0%, #1C212C 100%); padding: 40px;">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;">
             
             <!-- Left Column: Text Content in White Container with Rounded Borders -->
-            <div style="background-color: white; border-radius: 15px; padding: 20px; color: black; max-width: 600px; margin-right: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+            <div class="content-box" style="background-color: white; border-radius: 15px; padding: 20px; color: black; max-width: 600px; margin: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
                 <h2 style="font-size: 24px; font-weight: bold;">Возможности Ситуационного Центра</h2>
                 <p style="font-size: 16px; margin-bottom: 20px;">
                     Центр отслеживает в режиме реального времени городские процессы, выявляет угрозы и помогает оперативно принимать управленческие решения для обеспечения безопасности и устойчивого развития.
@@ -390,8 +390,8 @@
             </div>
             
             <!-- Right Column: Robot Image -->
-            <div style="display: flex; justify-content: center;">
-                <img src="img/robosit.png" alt="Robot" style="max-width: 600px; height: auto;">
+            <div class="robot-image" style="display: flex; justify-content: center; max-width: 600px; margin: 10px;">
+                <img src="img/robosit.png" alt="Robot" style="width: 100%; height: auto; max-width: 500px;">
             </div>
         </div>
     </div>

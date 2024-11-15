@@ -373,14 +373,7 @@ h1, .h1 {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .hero-stats h2 {
-        font-size: 24px; /* Adjust as needed for mobile */
-    }
-    .hero-stats p {
-        font-size: 16px; /* Adjust as needed for mobile */
-    }
-}
+
 
 
 .data-interface-section {
@@ -810,7 +803,7 @@ h1, .h1 {
 
 
 /*** Section Title ***/
-.section-title::before {
+/* .section-title::before {
     position: absolute;
     content: "";
     width: 45px;
@@ -818,9 +811,9 @@ h1, .h1 {
     bottom: 0;
     left: 0;
     background: var(--dark);
-}
+} */
 
-.section-title::after {
+/* .section-title::after {
     position: absolute;
     content: "";
     width: 4px;
@@ -828,7 +821,7 @@ h1, .h1 {
     bottom: 0;
     left: 50px;
     background: var(--dark);
-}
+} */
 
 .section-title.text-center::before {
     left: 50%;
@@ -1644,5 +1637,53 @@ ul {
 }
 
 
+
+
+/* Default Layout (Desktop) */
+.content-box, .robot-image {
+    max-width: 45%;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .content-box, .robot-image {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+/* Mobile Layout */
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .module-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically within the container */
+    }
+    
+    /* Ensure buttons and image take full width on mobile */
+    .module-content > div {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center; /* Center text inside the div */
+    }
+    
+    /* Add some margin between the image and buttons for mobile */
+    #content-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Adjusting the hero section on mobile */
+@media (max-width: 768px) {
+    .hero-stats {
+        display: none; /* Hide statistics section on mobile */
+    }
+}
 
 
